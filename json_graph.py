@@ -29,7 +29,7 @@ for i in range(len(extract_data.index)):
     else:
         value_index="value"+str(i)
         value_list=str(list(extract_data.iloc[i].round(1)))
-        value_merge='"'+value_index+'":'+value_list
+        value_merge='"'+value_index+'":'+value_list+","
     print(value_merge)
 
 
